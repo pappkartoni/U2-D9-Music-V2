@@ -281,91 +281,91 @@
                             <th scope="row">1</th>
                             <td>Beef Rap</td>
                             <td>4:39</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(1)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
                             <td>Hoe Cakes</td>
                             <td>3:54</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(2)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Potholderz feat. Count Bass D</td>
                             <td>3:20</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(3)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
                             <td>One Beer</td>
                             <td>4:18</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(4)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
                             <td>Deep Fried Frenz</td>
                             <td>4:59</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(5)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">6</th>
                             <td>Poo-Putt Platter</td>
                             <td>1:13</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(6)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">7</th>
                             <td>Filet-O-Rapper</td>
                             <td>1:03</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(7)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">8</th>
                             <td>Gumbo</td>
                             <td>0:49</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(8)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">9</th>
                             <td>Fig Leaf Bi-Carbonate</td>
                             <td>3:19</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(9)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">10</th>
                             <td>Kon Karne</td>
                             <td>2:51</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(10)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">11</th>
                             <td>Guinesses feat. Angelika & 4ize</td>
                             <td>4:41</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(11)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">12</th>
                             <td>Kon Queso</td>
                             <td>4:00</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(12)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">13</th>
                             <td>Rapp Snitch Knishes feat. Mr. Fantastik</td>
                             <td>2:52</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(13)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">14</th>
                             <td>Vomitspit</td>
                             <td>2:48</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(14)"><i class="bi bi-x"></i></button></td>
                         </tr>
                         <tr>
                             <th scope="row">15</th>
                             <td>Kookies</td>
                             <td>4:01</td>
-                            <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>
+                            <td><button class="btn btn-danger btn-sm" onclick="deleteSong(15)"><i class="bi bi-x"></i></button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -605,21 +605,23 @@
         let table = null;
         let deletes = null;
         function shiftSongsUp(index) {
-            for (let i = index; i < table.rows.length - 1; i++) {
+            for (let i = index; i < table.rows.length; i++) {
                 table.rows[i].cells[0].innerText++;
+                table.rows[i].cells[3].innerHTML = `<button class="btn btn-danger btn-sm" onclick="deleteSong(${i+1})"><i class="bi bi-x"></i></button></td>`
             }
-            initTable();
+            //initTable();
         }
         function shiftSongsDown(index) {
             for (let i = index; i < table.rows.length; i++) {
                 table.rows[i].cells[0].innerText--;
+                table.rows[i].cells[3].innerHTML = `<button class="btn btn-danger btn-sm" onclick="deleteSong(${i-1})"><i class="bi bi-x"></i></button></td>`
             }
-            initTable();
+            //initTable();
         }
         function initTable() {
             table = document.querySelector("#review .table-striped");
             deletes = document.querySelectorAll("#review .table-striped .btn-danger");
-            for (let i = 0; i < deletes.length; i++) {
+            /* for (let i = 0; i < deletes.length; i++) {
                 deletes[i].removeEventListener("click", function() {
                     table.deleteRow(i+1);
                     shiftSongsDown(i+1);
@@ -628,19 +630,24 @@
                     table.deleteRow(i+1);
                     shiftSongsDown(i+1);
                 })
-            }
+            } */
+        }
+
+        function deleteSong(i) {
+            table.deleteRow(i+1);
+            shiftSongsDown(i+1);
         }
         function addSong() {
             let num = document.getElementById("songNumber").value;
             let title = document.getElementById("songTitle").value;
             let dur = document.getElementById("songDuration").value;
             let newRow = table.insertRow(num);
-            newRow.innerHTML = `<th scope="row">${num}</th>
+            newRow.innerHTML = `<th scope="row">${num-1}</th>
                                 <td>${title}</td>
                                 <td>${dur}</td>
-                                <td><button class="btn btn-danger btn-sm"><i class="bi bi-x"></i></button></td>`;
+                                <td><button class="btn btn-danger btn-sm" onclick="deleteSong(${num-1})"><i class="bi bi-x"></i></button></td>`;
             shiftSongsUp(num);
-            initTable();
+            //initTable();
         }
         window.onload = function() {
             //document.querySelector("footer span.text-primary").innerText = document.getElementsByClassName("card").length;
