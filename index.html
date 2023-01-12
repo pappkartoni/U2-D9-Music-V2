@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>D7 Album Cards</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top border-bottom">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                    <a class="nav-link" href="#favourites">Favourite Albums</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#review">Album Review</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#shame">Hall of Shame</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#supervillain">MF DOOM</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#tapestry">Tapestry</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="text-center mb-5">Album Shenanigans</h1>
+    <div class="container py-5" id="favourites">
+        <h2 class="mb-3">Favourite Albums 
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fav-row" aria-expanded="false" aria-controls="fav-row">
+                        Toggle
+                    </button>
+                </h2>
+        <div class="row show" id="fav-row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0202abe1eaf9da931f42629b4a" class="card-img-top" alt="madvillainy" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="details">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Madvillainy</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Madvillain</h6>
+                        <p class="fs-3 text-muted collapse" id="details">Madvillainy is the only studio album by American hip hop duo Madvillain, consisting of rapper MF Doom and producer Madlib. It was released on March 23, 2004, on Stones Throw Records.</p>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 46min 22s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://m.media-amazon.com/images/I/716ZuJ-sejL._SL1200_.jpg" class="card-img-top" alt="operation doomsday">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Operation Doomsday</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">MF Doom</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 2h 17min</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e023ac318439ae56ce048d7bf5d" class="card-img-top" alt="agents of fortune">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Agents Of Fortune</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Blue Öyster Cult</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Rock</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 36min 20s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e028521692e95d60d4ba9331fe9" class="card-img-top" alt="fly me to the moon">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Fly Me To The Moon</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Bobby Womack</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Funk / Soul</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 31min 51s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02d844f6b7311a69b9a08e7a0f" class="card-img-top" alt="pinata">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Piñata</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Freddie Gibbs & Madlib</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 1h</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0270abac8554cbadf02fdd4d77" class="card-img-top" alt="son of yvonne">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">MA_DOOM: Son of Yvonne</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Masta Ace</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 42min 24s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020e4958126df26d6e07128962" class="card-img-top" alt="just tryin ta live">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Just Tryin ta Live</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Devin The Dude</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 1h 6min</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e027f2f9dc91f8ea04cea18f6a2" class="card-img-top" alt="afrika">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Afrika</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Dagobert</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Indie-Pop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 40min 49s</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" id="review">
+        <h2 class="mb-3">Review 
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#rev-row" aria-expanded="false" aria-controls="rev-row">
+                Toggle
+            </button></h2>
+        <div class="row show" id="rev-row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+                <img src="https://preview.redd.it/ze1g9wkuv8x71.png?width=2800&format=png&auto=webp&s=bedb29276c75f3d5c8b53320ce8f98362b59420f" class="img-fluid" alt="mm...food">
+            </div>
+            <div class="col-12 col-sm-6 col-md-8 col-lg-9 my-3">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Title</th>
+                            <td>MM...FOOD</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Interpret</th>
+                            <td>MF DOOM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Release Year</th>
+                            <td>2004</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Length</th>
+                            <td>15 Songs</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Duration</th>
+                            <td>48min 54s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 my-3">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Beef Rap</td>
+                            <td>4:39</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Hoe Cakes</td>
+                            <td>3:54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Potholderz feat. Count Bass D</td>
+                            <td>3:20</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>One Beer</td>
+                            <td>4:18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Deep Fried Frenz</td>
+                            <td>4:59</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Poo-Putt Platter</td>
+                            <td>1:13</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Filet-O-Rapper</td>
+                            <td>1:03</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Gumbo</td>
+                            <td>0:49</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Fig Leaf Bi-Carbonate</td>
+                            <td>3:19</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Kon Karne</td>
+                            <td>2:51</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Guinesses feat. Angelika & 4ize</td>
+                            <td>4:41</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Kon Queso</td>
+                            <td>4:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Rapp Snitch Knishes feat. Mr. Fantastik</td>
+                            <td>2:52</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Vomitspit</td>
+                            <td>2:48</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Kookies</td>
+                            <td>4:01</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" id="shame">
+        <h2 class="mb-3">Hall of Shame 
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#shame-row" aria-expanded="false" aria-controls="shame-row">
+                Toggle
+            </button>
+        </h2>
+        <div class="row show" id="shame-row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02e29a351729da4d29214e54e2" class="card-img-top" alt="chinese democracy">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Chinese Democracy</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Guns N'Roses</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Rock</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 1h 11min</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02a136f71553f34d930b43f7bb" class="card-img-top" alt="born again">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Born Again</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Notorious BIG</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 1h 15min</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02dcb6a73da1e7f293b875f69c" class="card-img-top" alt="grateful">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Grateful</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">DJ Khaled</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 1h 24min</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e022a135808915566038569c13d" class="card-img-top" alt="geist">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Geist</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">OG Keemo</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 34min 43s</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" id="supervillain">
+        <h2 class="mb-3">MF Doom 
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#doom-row" aria-expanded="false" aria-controls="doom-row">
+                Toggle
+            </button></h2>
+        <div class="row show" id="doom-row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273de20cdc5935096897bb687fc" class="card-img-top" alt="take me to your leader">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Take Me To Your Leader </h5>
+                        <h6 class="card-subtitle text-secondary mb-3">King Geedorah</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 42min 2s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0252f194d02c39909d1b284799" class="card-img-top" alt="mm food">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">MM...FOOD</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">MF Doom</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 48min 54s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e0202abe1eaf9da931f42629b4a" class="card-img-top" alt="madvillainy">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Madvillainy</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">Madvillain</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 46min 22s</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-3">
+                    <img src="https://m.media-amazon.com/images/I/716ZuJ-sejL._SL1200_.jpg" class="card-img-top" alt="operation doomsday">
+                    <div class="card-body">
+                        <h5 class="card-title text-truncate">Operation Doomsday</h5>
+                        <h6 class="card-subtitle text-secondary mb-3">MF Doom</h6>
+                        <h6 class="card-subtitle text-muted">Genre: Hip Hop</h6>
+                        <h6 class="card-subtitle text-muted">Duration: 2h 17min</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" id="tapestry">
+        <h2 class="mb-3">Tapestry 
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tap-row" aria-expanded="false" aria-controls="tap-row">
+                Toggle
+            </button></h2>
+        <div class="row show mb-5" id="tap-row" style="margin-inline: 0px"> <!-- yikes -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://m.media-amazon.com/images/I/716ZuJ-sejL._SL1200_.jpg" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e0226ee011fd2c090cfe5476026" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e0275d9ecf8d29744037d2d6064" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e0252f194d02c39909d1b284799" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e020c3f6f2f6b041482515ceb71" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67706c0000da8408700ca54e38a216c626ccc3" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e024ba1fe238a517021ebcc2ace" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d0000b273de20cdc5935096897bb687fc" alt="take me to your leader">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d0000b273d97a55d6ace2bf9e8ccb8cb1" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e021c74e2608e3caae82a1680bd" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e0202abe1eaf9da931f42629b4a" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e028f4944a3d77dd680bde9fd10" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02375d3aadd5eb8beb05ee00ed" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e026bc240551be44f15bb2bf596" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e021d65935df4bfa7c76615b37a" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02fb913ff4d22b3a559b3dbe3d" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e022bda54ed6628f89c94dccd58" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02792c8ff5212924a6316f2f38" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02c81512cf4ad12711299b94ea" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e024f1a3ec69b00d2ab712f1bed" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02655118b16066e6557c6b0cc6" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e027d79b9c2cacc84b20de67f80" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02fde79b88e2a659c394c5ae30" alt="operation doomsday">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 px-0">
+                <img class="img-fluid" src="https://i.scdn.co/image/ab67616d00001e02d8e34ac14b4ca3c7fe1a0e53" alt="operation doomsday">
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-light border-top">
+        <div class="container">
+            <ul class="nav navbar-light justify-content-center mt-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-muted" href="#">Back to Top</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-muted" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-muted" href="#">Copyright</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-muted"><span class="text-primary">0</span> total Albums</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            //document.querySelector("footer span.text-primary").innerText = document.getElementsByClassName("card").length;
+            document.querySelector("footer span.text-primary").innerText = document.querySelectorAll(".container img").length;
+        }
+    </script>
+</body>
+</html>
