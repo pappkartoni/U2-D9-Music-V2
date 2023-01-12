@@ -371,7 +371,7 @@
                 </table>
             </div>
         </div>
-        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#songModal">Add Song</a>
+        <a class="btn btn-primary shadow-lg" href="" data-toggle="modal" data-target="#songModal">Add Song</a>
     </div>
 <!--     <div class="container py-5" id="shame">
         <h2 class="mb-3">Hall of Shame 
@@ -609,33 +609,21 @@
                 table.rows[i].cells[0].innerText++;
                 table.rows[i].cells[3].innerHTML = `<button class="btn btn-danger btn-sm" onclick="deleteSong(${i+1})"><i class="bi bi-x"></i></button></td>`
             }
-            //initTable();
         }
         function shiftSongsDown(index) {
             for (let i = index; i < table.rows.length; i++) {
                 table.rows[i].cells[0].innerText--;
-                table.rows[i].cells[3].innerHTML = `<button class="btn btn-danger btn-sm" onclick="deleteSong(${i-1})"><i class="bi bi-x"></i></button></td>`
+                table.rows[i].cells[3].innerHTML = `<button class="btn btn-danger btn-sm" onclick="deleteSong(${i})"><i class="bi bi-x"></i></button></td>`
             }
-            //initTable();
         }
         function initTable() {
             table = document.querySelector("#review .table-striped");
             deletes = document.querySelectorAll("#review .table-striped .btn-danger");
-            /* for (let i = 0; i < deletes.length; i++) {
-                deletes[i].removeEventListener("click", function() {
-                    table.deleteRow(i+1);
-                    shiftSongsDown(i+1);
-                });
-                deletes[i].addEventListener("click", function() {
-                    table.deleteRow(i+1);
-                    shiftSongsDown(i+1);
-                })
-            } */
         }
 
         function deleteSong(i) {
-            table.deleteRow(i+1);
-            shiftSongsDown(i+1);
+            table.deleteRow(i);
+            shiftSongsDown(i);
         }
         function addSong() {
             let num = document.getElementById("songNumber").value;
@@ -647,7 +635,6 @@
                                 <td>${dur}</td>
                                 <td><button class="btn btn-danger btn-sm" onclick="deleteSong(${num-1})"><i class="bi bi-x"></i></button></td>`;
             shiftSongsUp(num);
-            //initTable();
         }
         window.onload = function() {
             //document.querySelector("footer span.text-primary").innerText = document.getElementsByClassName("card").length;
